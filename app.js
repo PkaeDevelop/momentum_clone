@@ -5,8 +5,17 @@
 // null == 아무것도 없다.
 // undefined == 변수는 존재하지만 값이 정의되지 않음 ex) let var1;
 // null과 undefined 차이 == null은 자연적으로 발생하지 않음
-//2.5번부터 진행할것
+// 배열은 0부터 센다
+// const 로 선언된 오브젝트의 속성을 바꾸는건 문제없다. 하지만 오브젝트 전체를 업데이트할경우 에러가 발생한다.
 
-const amIFat = null;
-let somthing;
-console.log(somthing , amIFat);
+const player = {
+  name: "nico",
+  point: 10,
+  fat: true,
+};
+
+console.log(player["name"]);
+player.fat = false;
+console.log(player.fat);
+player.lastname = "totoro";
+console.log(player);
