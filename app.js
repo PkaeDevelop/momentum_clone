@@ -1,21 +1,8 @@
-//const == 값이 바뀔수 없다
-//let == 값이 바뀔수 있다.
-//var == 구시대의 유물 쓰지말것
-//boolean = true or false
-// null == 아무것도 없다.
-// undefined == 변수는 존재하지만 값이 정의되지 않음 ex) let var1;
-// null과 undefined 차이 == null은 자연적으로 발생하지 않음
-// 배열은 0부터 센다
-// const 로 선언된 오브젝트의 속성을 바꾸는건 문제없다. 하지만 오브젝트 전체를 업데이트할경우 에러가 발생한다.
+function sayHeelo(arguments){
+  console.log("Hello My Name Is : " + arguments);
+}
 
-const player = {
-  name: "nico",
-  point: 10,
-  fat: true,
-};
-
-console.log(player["name"]);
-player.fat = false;
-console.log(player.fat);
-player.lastname = "totoro";
-console.log(player);
+sayHeelo('L');
+sayHeelo('A');
+sayHeelo('B');
+sayHeelo('C');
