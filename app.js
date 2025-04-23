@@ -1,8 +1,11 @@
-function sayHeelo(arguments){
-  console.log("Hello My Name Is : " + arguments);
+const player ={
+  name:"nico",
+  sayHello:function(otherPersonName){
+    console.log('hello '+otherPersonName+' nice to meet you');
+  }
 }
 
-sayHeelo('L');
-sayHeelo('A');
-sayHeelo('B');
-sayHeelo('C');
+console.log(player.name);
+player.sayHello("a");
+player.sayHello("b");
+player.sayHello("c");
