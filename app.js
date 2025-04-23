@@ -1,11 +1,3 @@
-const player ={
-  name:"nico",
-  sayHello:function(otherPersonName){
-    console.log('hello '+otherPersonName+' nice to meet you');
-  }
-}
+const age = parseInt(prompt("몇살이니?"));
 
-console.log(player.name);
-player.sayHello("a");
-player.sayHello("b");
-player.sayHello("c");
+console.log(age);
