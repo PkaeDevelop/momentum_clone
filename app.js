@@ -1,3 +1,3 @@
-const age = parseInt(prompt("몇살이니?"));
+const title = document.getElementById("title");
 
-console.log(age);
+title.innerText ="Got you!";
