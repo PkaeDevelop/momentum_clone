@@ -16,18 +16,6 @@ function handleWindowResize() {
   document.body.style.backgroundColor = "tomato";
 }
 
-function handleWinodwCopy() {
-  alert("복사하셨습니다.");
-}
-
-function handleWindowOffline() {
-  alert("와이파이 오프라인");
-}
-
-function handleWindowOnlie() {
-  alert("와이파이 온라인");
-}
-
 h1.addEventListener("click", handleTitleClick);
 //h1.onclick = handleTitleClick; //같은 표현
 
@@ -38,6 +26,3 @@ h1.addEventListener("mouseleave", handleMouseleave);
 //h1.onmouseleave = handleMouseleave; //같은 표현
 
 window.addEventListener("resize", handleWindowResize);
-window.addEventListener("copy", handleWinodwCopy);
-window.addEventListener("offline", handleWindowOffline);
-window.addEventListener("online", handleWindowOnlie);
