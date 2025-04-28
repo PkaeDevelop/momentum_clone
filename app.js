@@ -5,4 +5,3 @@ function handleLoginBtnClick() {
   const userName = loginInput.value;
   console.log(userName);
 }
-loginButton.addEventListener("click", handleLoginBtnClick);
