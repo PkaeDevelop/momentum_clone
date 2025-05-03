@@ -8,6 +8,10 @@
     <title>Momemtum</title>
   </head>
   <body>
+    <!--시간-->
+    <h2 id="clock">00:00</h2>
+
+    <!--로그인 폼-->
     <form id="login-form" class="hidden">
       <input
         required
@@ -16,21 +20,29 @@
         placeholder="What is your name?"
       />
       <button>Log In</button>
+
+      <!--로그인 성공 문구-->
     </form>
-    <form>
-      <h1 id="greeting" class="hidden"></h1>
-      <h1 id="login-form" class="hidden"></h1>
-    </form>
-    <h2 id="clock">00:00</h2>
     <h1 id="greeting" class="hidden"></h1>
+    </form>
+
+    <!--To-Do List-->
+    <form id="todo-form">
+      <input type="text" placeholder="Write a To Do and Press Enter" required/>
+    </form>
+    <ul id="todo-list">
+    </ul>
+
+    <!--명언-->
     <div id="quote">
       <span></span>
       <span></span>
     </div>
     
-    <script src="js/clock.js"></script>
     <script src="js/gretting.js"></script>
+    <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
   </body>
 </html>
