@@ -1,3 +1,183 @@
-.hidden{
-    display: none;
+/* style.css 전체 수정안 */
+
+/* 1. .hidden 클래스 */
+.hidden {
+    display: none !important;
+  }
+  
+  /* 2. 기본 리셋 */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 3. 배경, 폰트 설정 */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* 밝은 블루-라벤더 그라디언트로 변경 */
+    background: linear-gradient(135deg, #A0D8EF, #D4BFF9);
+    color: #222; /* 진한 회색으로 텍스트 컬러 변경 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+  }
+  
+  /* 4. 배경이미지 필터만 사용 (어둡게 하지 않음) */
+  .bg-image {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    filter: none;   /* 어둡게 하지 않음 */
+    z-index: -1;
+  }
+  
+  /* 5. 시계 */
+  #clock {
+    font-size: 4rem;
+    font-weight: 400;
+    margin-top: 10px;
+    color: #fff;              /* 시계는 흰색으로 눈에 띄게 */
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  /* 6. 로그인 폼 */
+  #login-form {
+    display: flex;
+    margin-top: 20px;
+    background: rgba(255,255,255,0.85);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  
+  #login-form input {
+    padding: 10px;
+    width: 200px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #222;
+  }
+  
+  #login-form input::placeholder {
+    color: #666;
+  }
+  
+  #login-form button {
+    padding: 10px 20px;
+    border: none;
+    background: #5563DE;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  /* 7. 인사말 */
+  #greeting {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #fff;              /* 인사말도 흰색으로 */
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  /* 8. To-Do 입력창 */
+  #todo-form {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 30px;
+  }
+  
+  #todo-form input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    background: rgba(255,255,255,0.9);
+    color: #222;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+  
+  #todo-form input::placeholder {
+    color: #777;
+  }
+  
+  /* 9. To-Do 리스트 */
+  #todo-list {
+    list-style: none;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+  }
+  
+  #todo-list li {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #222;
+  }
+  
+  #todo-list li button {
+    background: none;
+    border: none;
+    color: #ff6b6b;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  /* 10. 명언 */
+  #quote {
+    margin-top: auto;
+    text-align: center;
+    font-style: italic;
+  }
+  
+  #quote span:first-child {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  }
+  
+  #quote span:last-child {
+    display: block;
+    font-size: 0.9rem;
+    color: #eee;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+  }
+  
+  /* 11. 날씨 */
+  #weather {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  #weather span:first-child,
+  #weather span:last-child {
+    display: block;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+  }
+  
+/* 명언·날씨 텍스트에 검정 테두리(아웃라인) 강제 적용 */
+#quote span:first-child,
+#quote span:last-child,
+#weather span:first-child,
+#weather span:last-child {
+  /* 다중 쉐도우로 아웃라인 효과 */
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000 !important;
 }
